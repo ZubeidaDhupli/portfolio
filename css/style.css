@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+/* background image in about section */
+#about {
+  background-image: url(../images/purple-blue-background.png);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', monospace;
+  line-height: 1.5;
+}
+/*added style to profile pic*/
+img {
+  width: 200px;
+  height:auto;
+  position: relative;
+  bottom: 2%;
+  left: 43%;
+  border-radius: 4px;
+  transform: rotate(90deg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+/* space between sections */
+.page-section {
+  margin: 2%;
+}
+/* background image for work section */
+#work {background-image: url(../images/purple-blue-background.png);
+}
+
+/* added background image to proj1, proj2, proj3, proj4, proj5 */
+.page-section, .proj1 {
+  background-image: url("../images/violet-code.jpg");
+}
+
+.page-section, .proj2 {
+  background-image: url("../images/violet-code.jpg");
+}
+
+.page-section, .proj3 {
+  background-image: url("../images/violet-code.jpg");
+}
+
+.page-section, .proj4 {
+  background-image: url("../images/violet-code.jpg");
+}
+.page-section, .proj5 {
+  background-image: url("../images/violet-code.jpg");
+}
+
+/* all projects have flex styles */
+.page-section, .flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* first project is bigger than others */
+.page-section, .flex, .flexItem:first-child {
+  min-height: 300px;
+  flex-basis: 100%;
+}
+
+.page-section, .flex, .flexItem {
+  display: flex;
+  align-items: flex-end;
+  flex-basis: calc(50% - 1em);
+  margin: 0.5em;
+  min-height: 150px;
+}
+
+.page-section, .flex, .flexItem, div {
+  background-color: lavender;
+  padding: 10px;
+}
+
+/* making webpage responsive to screens of a smaller size */
+
+@media screen and (max-width: 768px) {
+  .flexItem {
+    flex-basis: 100%;
+  }
+  .page-section, .flex, .flexItem:first-child {
+    min-height: 150px;
+  }
+}
