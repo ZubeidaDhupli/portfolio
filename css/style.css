@@ -1,9 +1,40 @@
+:root {
+  --blue: #6495ED;
+}
+
+
 * {
   box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
 }
 /* background image in about section */
 #about {
   background-image: url(../images/purple-blue-background.png);
+}
+
+/* nav styles */
+nav  {
+  display: flex;
+  background-color: var(--blue);
+  padding: 20px;
+}
+
+nav .navigation {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}
+
+nav .navigation a {
+  color: black;
+  padding: 10px;
+  font-size: 18px;
+  text-decoration: none;
 }
 
 body {
@@ -83,6 +114,20 @@ h6 {
 .page-section, .flex, .flexItem, div {
   background-color: lavender;
   padding: 10px;
+}
+/* footer styles */
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--blue);
+  height: 100px;
+}
+
+.footer a {
+  padding: 20px 40px;
+  text-decoration: none;
+  color: black;
 }
 
 /* making webpage responsive to screens of a smaller size */
